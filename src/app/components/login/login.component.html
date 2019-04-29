@@ -1,0 +1,20 @@
+<div class="row justify-content-md-center">
+  <mat-card class="col-md-3 mt-5">
+      <form [formGroup]="myForm" (ngSubmit)="login(myForm)">           
+          <mat-form-field>
+              <input formControlName="email" matInput placeholder="Your Email">                                                
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+              <input type="password" formControlName="password" matInput placeholder="Password">
+          </mat-form-field>
+          <br>
+          <div class="col text-center">
+              <button type="submit" mat-raised-button color="accent">Login</button>
+          </div>
+          <div class="mt-3">
+              <a routerLink="/register">Create an account ?</a>
+          </div>
+      </form>
+  </mat-card>
+</div>
